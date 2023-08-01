@@ -16,7 +16,6 @@ app.use(express.static(path.join(__dirname, 'public'))  )
 
 app.use('/api/v1/', storeRoutes)
 
-
 const start = async () => {
     try {
       await connectDB(process.env.MONGO_URI);
