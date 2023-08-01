@@ -16,7 +16,7 @@ async function addStore(e) {
   };
 
   try {
-    const res = await fetch('/api/v1/stores', {
+    const res = await fetch('/api/v1/store', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

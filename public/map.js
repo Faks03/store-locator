@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
 
 // Fetch stores from API
 async function getStores() {
-  const res = await fetch('/api/v1/stores');
+  const res = await fetch('/api/v1/store');
   const data = await res.json();
 
   const stores = data.data.map(store => {
